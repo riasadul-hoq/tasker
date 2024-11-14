@@ -21,7 +21,9 @@ export default function AddTaskModal({ onSave, taskToUpdate, onCloseClick }) {
     let value = e.target.value;
 
     if (name === "tags") {
+      console.log(value);
       value = value.split(",");
+      console.log(value);
     }
 
     setTask({
